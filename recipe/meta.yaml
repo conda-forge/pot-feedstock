@@ -22,10 +22,12 @@ requirements:
     - setuptools
     - toolchain
     - cython
-    - numpy x.x
+    - numpy 1.8.*  # [not (win and (py35 or py36))]
+    - numpy 1.9.*  # [win and (py35 or py36)]
   run:
     - python
-    - numpy x.x
+    - numpy >=1.8  # [not (win and (py35 or py36))]
+    - numpy >=1.9  # [win and (py35 or py36)]
     - scipy
     - matplotlib
 
@@ -33,7 +35,7 @@ test:
   imports:
     - ot
   requirements:
-    - numpy x.x
+    - numpy
 
 about:
   home: http://github.com/rflamary/POT
