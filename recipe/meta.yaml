@@ -34,7 +34,7 @@ requirements:
 test:
   imports:
     - ot
-  requirements:
+  requires:
     - numpy
 
 about:
