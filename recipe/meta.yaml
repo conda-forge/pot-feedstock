@@ -1,7 +1,7 @@
 {% set name = "POT" %}
-{% set version = "0.5.1" %}
-{% set build = 1000 %}
-{% set sha256 = "3f8584b153e9850a83267b1b3f88e43ae0e5f68ae57ee79da9390bc19a93f836" %}
+{% set version = "0.6.0" %}
+{% set build = 0 %}
+{% set sha256 = "a0c254825b65bdfb2b9a4594d1876bdb3bd2564caf0bd86401b440e64c0806c0" %}
 
 package:
   name: {{ name|lower }}
