@@ -1,6 +1,6 @@
 {% set name = "POT" %}
 {% set version = "0.6.0" %}
-{% set build = 0 %}
+{% set build = 1 %}
 {% set sha256 = "a0c254825b65bdfb2b9a4594d1876bdb3bd2564caf0bd86401b440e64c0806c0" %}
 
 package:
@@ -29,7 +29,7 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - scipy
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:
