@@ -36,7 +36,7 @@ test:
     - ot
 
 about:
-  home: http://github.com/rflamary/POT
+  home: http://github.com/PythonOT/POT
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -46,7 +46,7 @@ about:
     problems related to Optimal Transport for signal, image processing and
     machine learning.
   doc_url: http://pot.readthedocs.io/
-  dev_url: https://github.com/rflamary/pot
+  dev_url: https://github.com/PythonOT/POT
 
 extra:
   recipe-maintainers:
