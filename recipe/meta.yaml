@@ -1,7 +1,7 @@
 {% set name = "POT" %}
-{% set version = "0.6.0" %}
-{% set build = 1 %}
-{% set sha256 = "a0c254825b65bdfb2b9a4594d1876bdb3bd2564caf0bd86401b440e64c0806c0" %}
+{% set version = "0.7.0" %}
+{% set build = 0 %}
+{% set sha256 = "d4ac2bc8791f049a3166820d51e218d6c299885449b735eafef8d18c76d4ad06" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 
 build:
   number: {{ build }}
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   build:
@@ -40,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Python Optimal Transport library'
+  summary: Python Optimal Transport library
   description: |
     This open source Python library provide several solvers for optimization
     problems related to Optimal Transport for signal, image processing and
