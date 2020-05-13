@@ -23,13 +23,13 @@ requirements:
   host:
     - python
     - pip
-    - cython
-    - numpy
+    - cython >=0.23
+    - numpy 1.16
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - scipy
-    - matplotlib-base
+    - scipy >=1.0
+    - matplotlib-base >=1.5
 
 test:
   imports:
