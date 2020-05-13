@@ -1,0 +1,14 @@
+diff --git a/setup.py b/setup.py
+index 91c24d9..fffb4ad 100755
+--- a/setup.py
++++ b/setup.py
+@@ -14,9 +14,6 @@
+ here = path.abspath(path.dirname(__file__))
+ 
+ 
+-os.environ["CC"] = "g++"
+-os.environ["CXX"] = "g++"
+-
+ # dirty but working
+ __version__ = re.search(
+     r'__version__\s*=\s*[\'"]([^\'"]*)[\'"]',  # It excludes inline comment too

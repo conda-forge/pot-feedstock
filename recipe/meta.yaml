@@ -11,6 +11,9 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - install-reqs.patch  # don't actually need cython at run / scipy at build
+    - remove-cc-setting.patch  # not sure why it sets CC=g++, breaks us
 
 build:
   number: {{ build }}
