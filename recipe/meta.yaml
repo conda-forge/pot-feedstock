@@ -12,12 +12,14 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
-    - install-reqs.patch  # don't actually need cython at run / scipy at build
-    - remove-cc-setting.patch  # not sure why it sets CC=g++, breaks us
+    - install-reqs.patch  # https://github.com/PythonOT/POT/pull/174
+    - remove-cc-setting.patch  # https://github.com/PythonOT/POT/pull/175
 
 build:
   number: {{ build }}
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script:
+    - export POT_LEAVE_CC=true  # [unix]
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
