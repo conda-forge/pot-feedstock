@@ -29,10 +29,10 @@ requirements:
     - python
     - pip
     - cython >=0.23
-    - numpy 1.16
+    - numpy
   run:
     - python
-    - {{ pin_compatible('numpy') }}
+    - numpy
     - scipy >=1.0
     - matplotlib-base >=1.5
 
