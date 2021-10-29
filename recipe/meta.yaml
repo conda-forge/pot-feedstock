@@ -50,7 +50,7 @@ about:
     This open source Python library provide several solvers for optimization
     problems related to Optimal Transport for signal, image processing and
     machine learning.
-  doc_url: http://pot.readthedocs.io/
+  doc_url: https://pythonot.github.io/
   dev_url: https://github.com/PythonOT/POT
 
 extra:
