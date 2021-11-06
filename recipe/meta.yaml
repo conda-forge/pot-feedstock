@@ -1,6 +1,6 @@
 {% set name = "POT" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "d4ac2bc8791f049a3166820d51e218d6c299885449b735eafef8d18c76d4ad06" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "a70e092ddc5a29a4b526192750604a634dfc2faa1641664b4c2c1c00b3cd63cf" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
     - remove-cc-setting.patch  # https://github.com/PythonOT/POT/pull/175
 
 build:
-  number: 1
+  number: 0
   skip: true  # [python_impl == 'pypy']
   script:
     - export POT_LEAVE_CC=true  # [unix]
