@@ -3,7 +3,7 @@ import ot
 
 n = 5
 a, b = np.random.dirichlet([1] * n, size=2)
-M = ot.dist(np.random.randn(n, 5), metric='canberra')
+M = ot.dist(np.random.randn(n, 5))
 
 W = ot.emd2(a, b, M)
 W_reg = ot.sinkhorn2(a, b, M, .1)
