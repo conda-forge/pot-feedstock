@@ -1,4 +1,4 @@
-{% set name = "POT" %}
+{% set name = "pot" %}
 {% set version = "0.9.4" %}
 {% set sha256 = "4cf8b46bf4992c37529161c32dd5e3334e0c089399142f08ed6d455b57015edd" %}
 
