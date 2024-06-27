@@ -1,6 +1,6 @@
 {% set name = "POT" %}
-{% set version = "0.9.3" %}
-{% set sha256 = "eecf2394390a73472e727ef75f7c801fc47509039f00c40f8fc64fdeea617c86" %}
+{% set version = "0.9.4" %}
+{% set sha256 = "4cf8b46bf4992c37529161c32dd5e3334e0c089399142f08ed6d455b57015edd" %}
 
 package:
   name: {{ name|lower }}
