@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [python_impl == 'pypy']
   script:
     - {{ PYTHON }} -m pip install . -vv
@@ -29,6 +29,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - cython >=0.23
     - numpy
   run:
